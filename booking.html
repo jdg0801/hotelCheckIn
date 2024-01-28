@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/hospitality4.svg">
+    <title>Room Booking</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="static/rooms1.jpg" alt="room" height="150" width="250">
+        </figure>
+        <table border="2">
+            <tr>
+                <td><a href="../hotelhome.html" target="_blank">Home</a></td>
+                <td>Book Your Room</td>
+                <td> <a href="../review/review.html" target="_blank">Leave a Review</a></td>
+                <td>Address and Contact</td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <form>
+             <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+             </div>
+             <br>
+             <div>
+                <label for="email">Contact Email:</label>
+                <input type="email" name="" id="email" placeholder="abc@def.com" required>
+             </div>
+            <br>
+            <div>
+            <label for="s_date">Start date:</label>
+            <input type="date" id="s_date" required>
+            <label for="e_date">end date:</label>
+            <input type="date" name="" id="e_date"required>
+            </div>
+            <br>
+            <div>
+                <label for="adult">Number of adult:</label>
+                <select name="adultNo" id="adult" required>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+
+                <label for="children">Number of children:</label>
+                <select name="childNo" id="child" required>
+                    <option value="">0</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="rooms">No of rooms:</label>
+                <select name="" id="room" required>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+            </div> 
+            <br>
+            <div>
+                <label for="roomtype">Choose the type of room:</label>
+                <input type="radio" id="roomtype" checked> Standard suite
+                <input type="radio" id="roomtype"> Deluxe suite
+                <input type="radio" id="roomtype"> Premium suite
+            </div>
+            <br>
+            <div>
+                <button type="submit">Confirm</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>We shall contact you at your given email only after the booking is confirmed.</p>
+    </footer>
+</body>
+</html>
